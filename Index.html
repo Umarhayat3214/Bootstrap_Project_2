@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap-Project-2</title>
+</head>
+<body>
+    <header>
+        <div class="container before_nav d-flex justify-content-between align-items-center text-center pt-1 pb-1">
+            <div class="logo"><img src="Img/Logo.png" alt="logo"></div>
+            <div class="searchbar ">
+                <div class="search-bar d-flex">
+                <select class="category-dropdown border-0 p-2">
+                  <option value="all">All Categories</option>
+                   </select>
+                <input type="text" class=" search-input border-0 outline-none p-2" placeholder="Search for items..." >
+                <button class="search-button text-white cursor-pointer border-0">
+                    <i class="bi bi-search text-white fs-5"></i>
+                </button>
+              </div>
+              </div>
+             
+            <div class="icon d-flex align-items-center text-center gap-2">
+                 <i class="bi bi-heart "></i>
+                <p class=" icon_decsription m-0">Wishtlist</p>
+            </div>
+            <div class="icon2 d-flex align-items-center text-center  gap-2">
+                 <i class="bi bi-cart3 "></i>
+                 <p class=" icon_decsription mb-0">Wishtlist</p>
+            </div>
+            <div class="icon3 d-flex align-items-center text-center gap-2">
+                 <i class="bi bi-person-circle "></i>
+                 <p class=" mb-0 icon_decsription">Ramzi Cherif</p>
+            </div>
+        
+           
+        </div>
+        <!-- ******************************* navebar *******************************  -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container d-flex justify-content-between ">
+                <div class="img-logo">
+              <img src="Img/Categories-btn.png" alt="" srcset="">
+            </div>
+                <div class="">
+                    <ul class="navbar-nav d-flex gap-3 ">
+                        <li class="nav-item d-flex align-items-center ">
+                            <i class="bi bi-house text-danger "></i>
+                            <a class="nav-link active text-danger " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center ">
+                            <i class="bi bi-fire "></i>
+                            <a class="nav-link " href="#">Hot deals</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center ">
+                            <i class="bi bi-percent "></i>
+                            <a class="nav-link " href="#">Promotions</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center ">
+                            <i class="bi bi-megaphone "></i>
+                            <a class="nav-link " href="#">New products</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="number d-flex align-items-center justify-content-center gap-2 text-center">
+                        <i class="bi bi-telephone text-danger "></i>
+                        <span class="text-danger ">1233-7777</span>
+                        <p class="phone_decsription m-0">24/7 support center</p>
+                    </div>
+            </div>
+        </nav> 
+    </header>
+    <main>
+        <!-- ******************************* Hero_img *******************************  -->
+        <div class="hero_img">
+            <div class="container">
+                <div class="textAndEmailbar w-50">
+                <div class="hero_text d-flex flex-column gap-4 mb-4 ">
+                    <h1 class="fw-bold">Don’t miss our daily amazing deals. </h1>
+                    <p>Save up to 60% off on your first order</p>
+                </div>
+                <!-- <div class="emailbar w-75 d-flex">
+                    <i class="bi bi-send"></i>
+                    <input type="email" class="form-control" placeholder="Enter your email address">
+                    <button class=" hero_btn text-white border-0 cursor-pointer ">Subscribe</button>    
+                </div> -->
+                <div class="emailbar w-75 d-flex position-relative">
+                    <i class="bi bi-send"></i>
+                    <input type="email" class="form-control ps-5" placeholder="Enter your email address">
+                    <button class="hero_btn text-white border-0 cursor-pointer">Subscribe</button>
+                </div>
+                
+                </div>
+            </div>
+            <div class="heroimg">
+                <img src="Img/Hreo-img.png" alt="heroimg" srcset=""  >
+            </div>
+        </div>
+         <!-- ******************************* Explore Catagory *******************************  -->
+         <div class="container pt-5 pb-5">
+            <div class="explor_section pb-3  bt-3">
+                    <div class="Explore d-flex justify-content-between align-items-center">
+                        <div class="Explore-left">
+                        <h2 class="text-center fs-3">Explore categories</h2>
+                    </div>
+                        <div class="Explore-right">
+                           <ul class="d-flex gap-4 list-unstyled mb-0 fs-5">
+                            <li>All</li>
+                            <li>Vagitables</li>
+                            <li>Furits</li>
+                            <li>Coffe & teas</li>
+                            <li>Meat</li>
+                           </ul>
+                        </div>
+                    </div>
+            </div>
+            <div class="cardbox d-flex justify-content-between align-items-center ">
+                <div class="card d-flex justify-content-center align-items-center text-center flex-column border-0 ">
+                    <img src="Img/c-1.png" alt="Category1" width="100px" srcset="">
+                    <div class="card-body">
+                    <h5 class="card-title">Peach</h5>
+                    <p class="card-text">20 Items</p>
+                    </div>
+                 </div>
+                <div class="card d-flex justify-content-center align-items-center text-center flex-column border-0">
+                    <img src="Img/c-2.png" alt="Category1" width="100px" srcset="">
+                    <div class="card-body">
+                    <h5 class="card-title">Vegetables</h5>
+                    <p class="card-text">220 Items</p>
+                    </div>
+                 </div>
+                <div class="card card_color3 d-flex justify-content-center align-items-center text-center flex-column border-0">
+                    <img src="Img/image 5.png" alt="Category1" width="100px" srcset="">
+                    <div class="card-body">
+                    <h5 class="card-title">strawberry</h5>
+                    <p class="card-text">10 Items</p>
+                    </div>
+                 </div>
+                <div class="card d-flex justify-content-center align-items-center text-center flex-column border-0">
+                    <img src="Img/image 6.png" alt="Category1" width="100px" srcset="">
+                    <div class="card-body">
+                    <h5 class="card-title">Apple</h5>
+                    <p class="card-text">40 Items</p>
+                    </div>
+                 </div>
+                <div class="card d-flex justify-content-center align-items-center text-center flex-column border-0">
+                    <img src="Img/image 7.png" alt="Category1" width="100px" srcset="">
+                    <div class="card-body">
+                    <h5 class="card-title">Orange</h5>
+                    <p class="card-text">23 Items</p>
+                    </div>
+                 </div>
+                <div class="card card_color6     d-flex justify-content-center align-items-center text-center flex-column border-0">
+                    <img src="Img/image 8.png" alt="Category1" width="100px" srcset="">
+                    <div class="card-body">
+                    <h5 class="card-title">Potato</h5>
+                    <p class="card-text">3 Items</p>
+                    </div>
+                 </div>
+                <div class="card d-flex justify-content-center align-items-center text-center flex-column border-0">
+                    <img src="Img/image 9.png" alt="Category1" width="100px" srcset="">
+                    <div class="card-body">
+                    <h5 class="card-title">Carrot</h5>
+                    <p class="card-text">9 Items</p>
+                    </div>
+                 </div>
+             </div>
+         </div> 
+         <!-- ******************************* Catagory Explor2 *******************************  -->
+         <div class="container pt-3 pb-5">
+             <div class="explor_section pb-3  bt-3">
+                 <div class="Explore d-flex justify-content-between align-items-center">
+                        <div class="Explore-left">
+                        <h2 class="text-center fs-3">Explore categories</h2>
+                    </div>
+                        <div class="Explore-right">
+                           <ul class="d-flex gap-4 list-unstyled mb-0 fs-5">
+                               <li>All</li>
+                               <li>Vagitables</li>
+                               <li>Furits</li>
+                               <li>Coffe & teas</li>
+                               <li>Meat</li>
+                           </ul>
+                        </div>
+                    </div>
+            </div>
+            <div class="cardbox cardbox2 d-flex justify-content-center gap-3 ">
+                <div class="card2 border shadow-sm d-flex justify-content-center align-items-center text-center flex-column">
+                    <img src="Img/Rectangle 19.png" alt="Category1" width="100%" srcset="">
+                    <div class="card-body d-flex flex-column align-items-start gap-2">
+                        <div class="firstbox d-flex flex-column align-items-start" >
+                            <p class="card-text mb-1" style="color: #ADADAD;">Vegetables</p>
+                            <h5 class="card-title">Redish 500g</h5>
+                        </div>
+                        <div class="secondbox d-flex flex-column align-items-start">
+                        <div class="staric d-flex gap-1 justify-content-center align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class=s"fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="p" style="color: #D4D4D4;">By Mr.Food</div>
+                    </div>
+                    <div class="threebox d-flex justify-content-between gap-4 pb-2">
+                        <div class="doller d-flex justify-content-between text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0  text-decoration-line-through" style="color:#ADADAD;">$3.99</p>
+                        </div>
+                        <div class="addbtn border d-flex p-2 justify-content-center align-items-center gap-1 "style="background-color: #DEF9EC;">
+                            <i class="bi bi-cart" style="color: #3BB77E;"></i>
+                            <div class="add" style="color: #3BB77E;">Add</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card2 border shadow-sm d-flex justify-content-center align-items-center text-center flex-column">
+                    <img src="Img/Rectangle 19 (1).png" alt="Category1" width="100%" srcset="">
+                    <div class="card-body d-flex flex-column align-items-start gap-2">
+                        <div class="firstbox d-flex flex-column align-items-start" >
+                        <p class="card-text mb-1" style="color: #ADADAD;">Vegetables</p>
+                        <h5 class="card-title">Potatos 1kg</h5>
+                        </div>
+                    <div class="secondbox d-flex flex-column align-items-start">
+                        <div class="staric d-flex gap-1 justify-content-center align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="p" style="color: #D4D4D4;">By Mr.Food</div>
+                    </div>
+                    <div class="threebox d-flex justify-content-between gap-4 pb-2">
+                        <div class="doller d-flex justify-content-between text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through" style="color:#ADADAD;">$3.99</p>
+                        </div>
+                        <div class="addbtn border d-flex p-2 justify-content-center align-items-center gap-1 "style="background-color: #DEF9EC;">
+                            <i class="bi bi-cart" style="color: #3BB77E;"></i>
+                            <div class="add" style="color: #3BB77E;">Add</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card2 border shadow-sm d-flex justify-content-center align-items-center text-center flex-column">
+                    <img src="Img/Rectangle 19 (2).png" alt="Category1" width="100%" srcset="">
+                    <div class="card-body d-flex flex-column align-items-start gap-2">
+                        <div class="firstbox d-flex flex-column align-items-start" >
+                            <p class="card-text mb-1" style="color: #ADADAD;">Fruits</p>
+                        <h5 class="card-title">Tomatos 200g</h5>
+                    </div>
+                    <div class="secondbox d-flex flex-column align-items-start">
+                        <div class="staric d-flex gap-1 justify-content-center align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="p" style="color: #D4D4D4;">By Mr.Food</div>
+                    </div>
+                    <div class="threebox d-flex justify-content-between gap-4 pb-2">
+                        <div class="doller d-flex justify-content-between text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through" style="color:#ADADAD;">$3.99</p>
+                        </div>
+                        <div class="addbtn border d-flex p-2 justify-content-center align-items-center gap-1 "style="background-color: #DEF9EC;">
+                            <i class="bi bi-cart" style="color: #3BB77E;"></i>
+                            <div class="add" style="color: #3BB77E;">Add</div>
+                        </div>
+                    </div>
+                    </div>
+                 </div>
+                 <div class="card2 border shadow-sm d-flex justify-content-center align-items-center text-center flex-column">
+                    <img src="Img/Rectangle 19 (3).png" alt="Category1" width="100%" srcset="">
+                    <div class="card-body d-flex flex-column align-items-start gap-2">
+                        <div class="firstbox d-flex flex-column align-items-start" >
+                        <p class="card-text mb-1" style="color: #ADADAD;">Vegetables</p>
+                        <h5 class="card-title">Broccoli 1kg</h5>
+                    </div>
+                    <div class="secondbox d-flex flex-column align-items-start">
+                        <div class="staric d-flex gap-1 justify-content-center align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="p" style="color: #D4D4D4;">By Mr.Food</div>
+                    </div>
+                    <div class="threebox d-flex justify-content-between gap-4 pb-2">
+                        <div class="doller d-flex justify-content-between text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through" style="color:#ADADAD;">$3.99</p>
+                        </div>
+                        <div class="addbtn border d-flex p-2 justify-content-center align-items-center gap-1 "style="background-color: #DEF9EC;">
+                            <i class="bi bi-cart" style="color: #3BB77E;"></i>
+                            <div class="add" style="color: #3BB77E;">Add</div>
+                        </div>
+                    </div>
+                </div>
+                 </div>
+                 <div class="card2 border shadow-sm d-flex justify-content-center align-items-center text-center flex-column">
+                     <img src="Img/Rectangle 19 (4).png" alt="Category1" width="100%" srcset="">
+                     <div class="card-body d-flex flex-column align-items-start gap-2">
+                         <div class="firstbox d-flex flex-column align-items-start" >
+                             <p class="card-text mb-1" style="color: #ADADAD;">Vegetables</p>
+                             <h5 class="card-title">Green Beans 250g</h5>
+                            </div>
+                            <div class="secondbox d-flex flex-column align-items-start">
+                                <div class="staric d-flex gap-1 justify-content-center align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="p" style="color: #D4D4D4;">By Mr.Food</div>
+                    </div>
+                    <div class="threebox d-flex justify-content-between gap-4 pb-2">
+                        <div class="doller d-flex justify-content-between text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through" style="color:#ADADAD;">$3.99</p>
+                        </div>
+                        <div class="addbtn border d-flex p-2 justify-content-center align-items-center gap-1 "style="background-color: #DEF9EC;">
+                            <i class="bi bi-cart" style="color: #3BB77E;"></i>
+                            <div class="add  " style="color: #3BB77E;">Add</div>
+                        </div>
+                    </div>
+                    </div>
+                 </div>
+             </div>
+            </div> 
+            <!-- ******************************* Free Delivery *******************************  -->
+             <div class="container pt-4 pb-5 d-flex justify-content-between gap-3" >
+                <div class="fre_left d-flex w-50 " >
+                    <div class="l_left_side" style="width: 60%;">
+                    <div class="free_txt px-4 pt-4 d-flex flex-column gap-2">
+                    <div class="btn text-white " style="background-color: #FFD480; width: 130px;">Free Delivery</div>
+                    <h3>Free delivery over $50 </h3>
+                    <p class="fs-5 w-100" style="color: #838383;">Shop $50 product and get free delivery anywhre.</p>
+                    </div>
+                    <div class=" button mx-4 mb-4 d-flex align-items-center mt-4 gap-2 text-white" style="width: 150px; height: 60px; padding: 10px 25px; background-color: #3BB77E;">
+
+                       Shop Now
+                        <i class="bi bi-arrow-right "></i>
+                    </div>
+                    </div>
+                <div class="right_side "style="width: 40%;">
+                        <img src="./Img/Servent.png" alt="" class="myimg ">
+                </div>
+            </div>
+                
+                <div class="fre_right d-flex w-50">
+                    <div class="l_left_side" style="width: 60%;">
+                        <div class="free_txt px-4 pt-4 d-flex flex-column gap-2">
+                        <div class="btn text-white " style="background-color: #FFD480; width: 130px;">Free Delivery</div>
+                        <h3>Free delivery over $50 </h3>
+                        <p class="fs-5 w-100" style="color: #838383;">Shop $50 product and get free delivery anywhre.</p>
+                        </div>
+                        <div class=" button mx-4 mb-4 d-flex align-items-center mt-4 gap-2 text-white" style="width: 150px; height: 60px; padding: 10px 25px; background-color: #3BB77E;">
+                           Shop Now
+                            <i class="bi bi-arrow-right "></i>
+                        </div>
+                        </div>
+                    <div class="right_side "style="width: 40%;">
+                            <img src="./Img/Offer2-img.png" alt="" class="myimg ">
+                    </div>
+                </div>
+             </div>
+             <!-- ******************************* Daily Best *******************************  -->
+             <!-- ******************************* Daily Best *******************************  -->
+             <div class="daily_sec container pb-5 pt-4">
+                 <nav class="d-flex justify-content-between mb-4 ">
+                     <div class="nav_left d-flex justify-content-between align-items-center gap-4  text-center">
+                         <div class="logo"><h3>Daily Best Sells</h3></div>
+                         <ul class="d-flex gap-4 list-unstyled mb-0">
+                             
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Populer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">New</a>
+                        </li>
+                    </ul>
+                        <div class="timer">
+                            <h6 class="p-2 border backgro text-white" style="background-color: #F35244;" >Expair In 10:30:20</h6>
+    
+                    </div>
+                </div>
+                <div class="nav_right">
+                    <div class="botharrow d-flex gap-2">
+                    <div class="errow">
+                        <i class="bi bi-arrow-right "></i>
+                </div>
+                    <div class="errow">
+                        <i class="bi bi-arrow-left"></i>
+                </div>
+                </div>
+                </div>
+                </nav>
+                <div class="card_section d-flex gap-2 justify-content-center">
+                 <div class=" card c3 shadow-sm">
+                    <img src="Img/Rectangle 191.png" alt="" width="100%" style="object-fit: cover;">
+                    <div class="card-body " style="background-color: white;"> 
+                        <div class="body1 d-flex flex-column gap-1 ">
+                            <div class="body1st ">
+                                <p class="mb-1">Coffe & teas</p>
+                                <h6>Coffe 1kg</h6>
+                            </div>
+                            <div class="body2nd">
+                                <div class="secondbox d-flex flex-column align-items-start">
+                                    <div class="staric d-flex gap-1 justify-content-center align-items-center ">
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                                <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                            </div>
+                            <div class="p" style="color: #D4D4D4;">By Mr.Food</div>
+                        </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="body2 d-flex flex-column gap-2" >
+                            <div class="body1st d-flex flex-column gap-2  mt-1">
+                                <div class="doller d-flex text-center  align-items-center gap-1">
+                                    <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                                    <p class="mb-0 text-decoration-line-through" style="color:#ADADAD;">$3.99</p>
+                                </div>
+                                <div class="progress "style="height: 10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%; background: #3BB77E; height: 10px; "  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  ></div>
+                                </div>
+                                <p>Sold: 20/50</p>
+                            </div>
+                            <div class="body2nd ">
+                                <div class="btn d-flex justify-content-center gap-2  " style="background-color:  #3BB77E;">
+                                        <i class="bi bi-cart text-white" ></i>
+                                        <div class="add text-white" style="color: #3BB77E;">Add to Card</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class=" card c3 shadow-sm">
+                    <img src="Img/Rectangle 19 (1)1.png" alt="" width="100%" style="object-fit: cover;">
+                    <div class="card-body " style="background-color: white;"> 
+                        <div class="body1 d-flex flex-column gap-1 ">
+                            <div class="body1st ">
+                                <p class="mb-1">Coffe & teas</p>
+                                <h6>Coffe 1kg</h6>
+                            </div>
+                            <div class="body2nd">
+                                <div class="secondbox d-flex flex-column align-items-start">
+                                    <div class="staric d-flex gap-1 justify-content-center align-items-center ">
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                                <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                            </div>
+                            <div class="p" style="color: #D4D4D4;">By Mr.Food</div>
+                        </div>
+                            </div>
+                        </div>
+
+                        <div class="body2 d-flex flex-column gap-2" >
+                            <div class="body1st d-flex flex-column gap-2  mt-1">
+                                <div class="doller d-flex text-center  align-items-center gap-1">
+                                    <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                                    <p class="mb-0 text-decoration-line-through" style="color:#ADADAD;">$3.99</p>
+                                </div>
+                                <div class="progress "style="height: 10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%; background: #3BB77E; height: 10px; "  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  ></div>
+                                </div>
+                                  <p>Sold: 20/50</p>
+                                </div>
+                            <div class="body2nd ">
+                                <div class="btn d-flex justify-content-center gap-2  " style="background-color:  #3BB77E;">
+                                        <i class="bi bi-cart text-white" ></i>
+                                        <div class="add text-white" style="color: #3BB77E;">Add to Card</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class=" card c3 shadow-sm">
+                     <img src="Img/Rectangle 19 (2)2.png" alt="" width="100%" style="object-fit: cover;">
+                     <div class="card-body " style="background-color: white;"> 
+                         <div class="body1 d-flex flex-column gap-1 ">
+                             <div class="body1st ">
+                                 <p class="mb-1">Coffe & teas</p>
+                                <h6>Coffe 1kg</h6>
+                            </div>
+                            <div class="body2nd">
+                                <div class="secondbox d-flex flex-column align-items-start">
+                                    <div class="staric d-flex gap-1 justify-content-center align-items-center ">
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                                <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                            </div>
+                            <div class="p" style="color: #D4D4D4;">By Mr.Food</div>
+                        </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="body2 d-flex flex-column gap-2" >
+                            <div class="body1st d-flex flex-column gap-2  mt-1">
+                                <div class="doller d-flex text-center  align-items-center gap-1">
+                                    <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                                    <p class="mb-0 text-decoration-line-through" style="color:#ADADAD;">$3.99</p>
+                                </div>
+                                <div class="progress "style="height: 10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%; background: #3BB77E; height: 10px; "  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  ></div>
+                                  </div>
+                                  <p>Sold: 20/50</p>
+                            </div>
+                            <div class="body2nd ">
+                                <div class="btn d-flex justify-content-center gap-2  " style="background-color:  #3BB77E;">
+                                    <i class="bi bi-cart text-white"></i>
+                                    <div class="add text-white" style="color: #3BB77E;">Add to Card</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class=" card c3 shadow-sm">
+                    <img src="Img/Rectangle 19 (3)3.png" alt="" width="100%" style="object-fit: cover;">
+                    <div class="card-body " style="background-color: white;"> 
+                        <div class="body1 d-flex flex-column gap-1 ">
+                            <div class="body1st ">
+                                <p class="mb-1">Coffe & teas</p>
+                                <h6>Coffe 1kg</h6>
+                            </div>
+                            <div class="body2nd">
+                                <div class="secondbox d-flex flex-column align-items-start">
+                                    <div class="staric d-flex gap-1 justify-content-center align-items-center ">
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                                <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                                <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                            </div>
+                            <div class="p" style="color: #D4D4D4;">By Mr.Food</div>
+                        </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="body2 d-flex flex-column gap-2" >
+                            <div class="body1st d-flex flex-column gap-2  mt-1">
+                                <div class="doller d-flex text-center  align-items-center gap-1">
+                                    <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                                    <p class="mb-0 text-decoration-line-through" style="color:#ADADAD;">$3.99</p>
+                                </div>
+                                <div class="progress "style="height: 10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%; background: #3BB77E; height: 10px; "  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  ></div>
+                                </div>
+                                <p>Sold: 20/50</p>
+                            </div>
+                            <div class="body2nd ">
+                                <div class="btn d-flex justify-content-center gap-2  " style="background-color:  #3BB77E;">
+                                    <i class="bi bi-cart text-white" ></i>
+                                    <div class="add text-white" style="color: #3BB77E;">Add to Card</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="lastbox" style="background-color: #FFF7E6CC; width: 22%;" >
+                     <div class="lastbox1 d-flex justify-content-center align-items-center text-center flex-column">
+                        <h4>10% OFF</h4>
+                        <p>For new member sign up at the first time</p>
+                    </div>
+                    <div class="lastbox2 d-flex justify-content-center p-2 flex-column">
+                        <p class="mb-0">Email address*</p>
+                        <div class="intput" style="position: relative;">
+                            <i class="fa-regular fa-envelope"></i>
+                        <input class="form-control ps-5 rounded-0" placeholder=" Enter your email">
+                    </div>
+                </div>
+                    <div class="lastbox2 d-flex justify-content-center p-2 flex-column">
+                        <p class="mb-0">Email address*</p>
+                        <div class="intput" style="position: relative;">
+                            <i class="fa-solid fa-key"></i>
+                            <input class="form-control ps-5 rounded-0" placeholder=" Maximum 8 characters">
+                    </div>
+                </div>
+                <div class="btn d-flex justify-content-center gap-2 mt-4 " style="background-color:  #3BB77E;">              
+                    <i class="bi bi-cart" style="color: #3BB77E;"></i>
+                        <div class="add text-white" style="color: #3BB77E;">Register Now</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ******************************* Top *******************************  -->
+             <div class= " container top_sec mt-3 pb-5 d-flex justify-content-between gap-3">
+                <div class="item_collection d-flex  gap-4 flex-column">
+                    <div class="heading_top">
+                    <h5>Top Sells</h5>
+                     <div class="progress  top_progressbar ">
+                        <div class="progress-bar" role="progressbar"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  ></div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="Img/image 7.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="img/c-2.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="Img/image 5.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="item_collection d-flex  gap-4 flex-column">
+                    <div class="heading_top">
+                    <h5>Top Sells</h5>
+                     <div class="progress  top_progressbar ">
+                        <div class="progress-bar" role="progressbar"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  ></div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="Img/image 7.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="img/c-2.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="Img/image 5.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="item_collection d-flex  gap-4 flex-column">
+                    <div class="heading_top">
+                    <h5>Top Sells</h5>
+                     <div class="progress  top_progressbar ">
+                        <div class="progress-bar" role="progressbar"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  ></div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="Img/image 9.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="img/image 8.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="Img/image 7.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+                <div class="item_collection d-flex  gap-4 flex-column">
+                    <div class="heading_top">
+                    <h5>Top Sells</h5>
+                     <div class="progress  top_progressbar ">
+                        <div class="progress-bar" role="progressbar"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"  ></div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="Img/image 7.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="img/c-2.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class=" d-flex justify-content-between gap-3">
+                    <div class="left p-2 " style="width: 40%; background-color: #F4F6FA;">
+                    <img src="Img/image 5.png" alt="" width="100%" style="object-fit: cover;">
+                    </div>
+                    <div class="right mt-2 " style="width: 60%;">
+                        <h6>Orange 1kg</h6>
+                        <div class="staric d-flex gap-1  align-items-center ">
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #FDC040;"></i>
+                            <i class="fa-solid fa-star" style="color: #D4D4D4;"></i>
+                            <p class="mb-0"style="color: #D4D4D4;"> (4)</p>
+                        </div>
+                        <div class="doller top_doller d-flex text-center  align-items-center gap-2">
+                            <h6 class="mb-0" style="color: #3BB77E;">$2</h6>
+                            <p class="mb-0 text-decoration-line-through " style="color:#ADADAD; font-size: 13px;">$3.99</p>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+             </div>
+              <!-- ******************************* Top *******************************  -->
+              <div class="hro_img">
+              <div class= " container top_sec mt-3 d-flex justify-content-center gap-1">
+                <div class="left_himg d-flex justify-content-center align-items-center" style="width: 45%;">
+                    <div class="text_hro">
+                        <h1 class="fw-bold" style="font-family: 'Quicksand'; width:350px; color: #253D4E">
+                            Shop Faster With Groceyish App
+                        </h1>
+                        <p class="mt-4" style=" color :#838383;">Available on both IOS & Android</p>
+                        <div class="app_stor d-flex justify-content-center border gap-0 mt-5" style="width: 473px;">
+                        <div class="imgone">
+                            <img src="Img/image 13.png" alt="" class="w-75">
+                        </div>
+                            <div class="imgone">
+                                <img src="Img/image 14.png" alt="" class="w-75">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="img_right " style="width: 55%">
+                    <img src="Img/App.png" alt="" height="500px">
+                </div>
+                </div>
+              </div>
+            </div>
+             <!-- ******************************* bestCard *******************************  -->
+             <div class="container pb-5 pt-5">
+             <div class="best_card_sec d-flex justify-content-between pb-5 pt-3">
+                    <div class="item_card_best d-flex gap-2 p-1 w-25">
+                        <div class="item_left d-flex justify-content-center align-items-center ">
+                        <img src="Img/small card.png" width="52px" height="52px" >
+                    </div>
+                    <div class="item_right d-flex flex-column">
+                        <h5 class="fw-bold"style="font-family: 'Quicksand';">Best Prices & Deals</h5>
+                        <p style="font-family: 'Quicksand';">Don’t miss our daily amazing deals and prices</p>
+                    </div>
+                    </div>
+                    <div class="item_card_best d-flex gap-2 p-1 w-25">
+                        <div class="item_left d-flex justify-content-center align-items-center ">
+                        <img src="Img/small card2.png" width="52px" height="52px" >
+                    </div>
+                    <div class="item_right d-flex flex-column">
+                        <h5 class="fw-bold"style="font-family: 'Quicksand';">Best Prices & Deals</h5>
+                        <p style="font-family: 'Quicksand';">Don’t miss our daily amazing deals and prices</p>
+                    </div>
+                    </div>
+                    <div class="item_card_best d-flex gap-2 p-1 w-25">
+                        <div class="item_left d-flex justify-content-center align-items-center ">
+                        <img src="Img/small card3.png" width="52px" height="52px" >
+                    </div>
+                    <div class="item_right d-flex flex-column">
+                        <h5 class="fw-bold"style="font-family: 'Quicksand';">Best Prices & Deals</h5>
+                        <p style="font-family: 'Quicksand';">Don’t miss our daily amazing deals and prices</p>
+                    </div>
+                    </div>
+                </div>
+                <hr>
+              </div>
+              <!-- ******************************* Footer *******************************  -->
+               <div class="container d-flex justify-content-between pb-5 pt-4">
+                <div class="item_footer d-flex flex-column gap-4 ">
+                <div class="heading_footer">
+                    <img src="Img/Logo.png" alt="">
+                </div>
+                <div class="_detail_footer d-flex flex-column gap-3 ">
+                        <div class="footer_para d-flex gap-2">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Address: 1762 School House Road</p>
+                    </div>
+                        <div class="footer_para d-flex gap-2">
+                            <i class="bi bi-telephone"></i>
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Call Us: 1233-777</p>
+                    </div>
+                        <div class="footer_para d-flex gap-2">
+                            <i class="bi bi-envelope"></i>
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Email: groceyish@contact.com</p>
+                    </div>
+                        <div class="footer_para d-flex gap-2">
+                            <i class="bi bi-stopwatch"></i>
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Work hours: 8:00 - 20:00, Sunday -  Thursday</p>
+                    </div>
+                </div>
+                
+                </div> 
+                <div class="item_footer d-flex flex-column gap-4">
+                <div class="heading_footer">
+                    <h5>Account</h5>
+                </div>
+                <div class="_detail_footer d-flex flex-column gap-0 ">
+                 <p style="color: #253D4E; font-family: 'Quicksand';">Wishlist</p>
+                 <p style="color: #253D4E; font-family: 'Quicksand';">Cart</p>
+                 <p style="color: #253D4E; font-family: 'Quicksand';">Hot deals</p>
+                 <p style="color: #253D4E; font-family: 'Quicksand';">Shipping Details</p>
+                </div>
+
+                </div> 
+                <div class="item_footer d-flex flex-column gap-4">
+                <div class="heading_footer">
+                    <h5>Useful links</h5>
+                </div>
+                <div class="_detail_footer d-flex flex-column gap-0">
+                        <p style="color: #253D4E; font-family: 'Quicksand';">About Us</p>
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Conact</p>
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Hot deals</p>
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Promotions</p>
+                        <p style="color: #253D4E; font-family: 'Quicksand';">New products</p>
+                    </div>
+                </div> 
+                <div class="item_footer d-flex flex-column gap-4 ">
+                <div class="heading_footer">
+                     <h5>Help Center</h5>
+                </div>
+                <div class="_detail_footer d-flex flex-column gap-0">
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Payments</p>
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Refund</p>    
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Shipping</p>    
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Checkout</p>
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Q&A</p>
+                        <p style="color: #253D4E; font-family: 'Quicksand';">Privacy Policy</p>
+                   
+                    </div>
+                </div>
+
+                
+                </div> 
+               </div>
+               <div class="hr container">
+                <hr>    
+               </div>
+                <!-- ******************************* Social media icons *******************************  -->
+                 <div class="container d-flex justify-content-between align-items-center text-center mb-1">
+                        <p>© 2022, All rights reserved</p>
+                        <img src="Img/Payment.png" alt="">
+                        <div class="social_box d-flex justify-content-center align-items-center gap-2" >
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-linkedin"></i>
+                        </div>
+                       
+                 </div>
+    </main>
+
+
+    
+    <footer></footer>
+</body>
+</html>
